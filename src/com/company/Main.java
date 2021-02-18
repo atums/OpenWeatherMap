@@ -11,7 +11,7 @@ public class Main {
     public static void main(String[] args) {
         Main main = new Main();
         String strJson = null;
-        String urlApi = "https://api.openweathermap.org/data/2.5/onecall?lat=59.9342802&lon=30.3350986&exclude=hourly,%20daily&units=metric&appid=f48590ffbc16750a16527813681ccc2b";
+        String urlApi = "https://api.openweathermap.org/data/2.5/onecall?lat=59.9342802&lon=30.3350986&exclude=hourly,%20daily&units=metric&appid={Your_API_Key}";
         try {
             HttpURLConnection connection = (HttpURLConnection) new URL(urlApi).openConnection();
             connection.setRequestMethod("GET");
